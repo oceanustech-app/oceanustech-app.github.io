@@ -27,6 +27,7 @@
   .updated { color: #94a3b8; font-size: 13px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
   .back-link { display: inline-block; margin-bottom: 24px; color: #1E88E5; text-decoration: none; font-size: 14px; }
   .back-link:hover { text-decoration: underline; }
+  .new-badge { display: inline-block; background: #dbeafe; color: #1d4ed8; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 4px; margin-left: 8px; vertical-align: middle; }
   @media (max-width: 600px) { .container { padding: 24px 16px 60px; } h2 { font-size: 18px; } .page-title { font-size: 26px; } }
 </style>
 </head>
@@ -38,117 +39,220 @@
 <div class="container">
   <a href="/" class="back-link">← Back to Oceanus Tech</a>
   <h1 class="page-title">Privacy Policy</h1>
-  <p class="page-subtitle">TrackMySpend &nbsp;·&nbsp; Oceanus Tech &nbsp;·&nbsp; Effective April 22, 2026</p>
+  <p class="page-subtitle">TrackMySpend &nbsp;·&nbsp; Oceanus Tech &nbsp;·&nbsp; Effective May 2025</p>
+ 
   <p><strong>App Name:</strong> TrackMySpend</p>
-<p><strong>Developer:</strong> Oceanus Tech</p>
-<p><strong>Effective Date:</strong> April 22, 2026</p>
-<p><strong>Contact:</strong> hello@oceanustech.in</p>
-<p><strong>Address:</strong>  Peshwai Road,Dhamote,Neral-410101 </p>
-<h2>1. Introduction</h2>
-<p>Oceanus Tech ("we", "us", or "our") built TrackMySpend as a freemium mobile application. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
-<p>By creating an account or using TrackMySpend, you explicitly acknowledge that you have read, understood, and agreed to this Privacy Policy, including the transfer of your data to servers located outside your country of residence. If you do not agree, please do not use the app.</p>
-<h2>2. Information We Collect</h2>
-<h3>2.1 Information You Provide</h3>
-<ul>
-<li><strong>Account information</strong> — your name, email address, and profile photo (optional) when you register or sign in via Google</li>
-<li><strong>Expense data</strong> — expense titles, amounts, categories, dates, notes, and payment methods you enter into the app</li>
-<li><strong>Workspace names</strong> — labels you create to organise your expenses</li>
-<li><strong>Budget settings</strong> — monthly budget limits and category budgets you configure</li>
-<li><strong>Receipt photos</strong> — optional photos of receipts captured using your device camera. Camera access is only used when you choose to attach a receipt photo to an expense. Receipt photos are stored locally on your device and, for Premium users, may be stored in your account. We do not use your camera for any other purpose.</li>
-</ul>
-<h3>2.2 Information Collected Automatically</h3>
-<ul>
-<li><strong>Device information</strong> — device model, operating system version, and unique device identifiers</li>
-<li><strong>Usage data</strong> — app features used, screens visited, and session duration, collected via Firebase Analytics</li>
-<li><strong>Crash reports</strong> — error logs and stack traces collected via Firebase Crashlytics to help us fix bugs</li>
-<li><strong>Advertising ID</strong> — a resettable device identifier used by Google AdMob to show personalised ads to free users only</li>
-</ul>
-<h3>2.3 Camera Permission</h3>
-<p>TrackMySpend requests access to your device camera solely to allow you to photograph receipts and attach them to expense entries. This is an entirely optional feature. <strong>We do not access your camera at any other time, do not record video, and do not transmit camera data to any server without your explicit action.</strong> You may deny camera permission and still use all other features of the app.</p>
-<h3>2.4 Biometric Data</h3>
-<p>TrackMySpend offers optional biometric login (fingerprint or Face ID). We want to be clear: <strong>Oceanus Tech does not collect, receive, transmit, or store any biometric data whatsoever.</strong> Biometric authentication is handled entirely and exclusively by your device's operating system (Android BiometricManager API). Your fingerprint or facial data never leaves your device and never reaches our servers.</p>
-<h3>2.5 Information We Do NOT Collect</h3>
-<ul>
-<li>We do not collect bank account numbers, credit card numbers, or any financial credentials</li>
-<li>We do not access your contacts, SMS messages, or call logs</li>
-<li>We do not collect your precise or approximate location</li>
-<li>We do not collect biometric data (see Section 2.4 above)</li>
-<li>We do not use the camera for any purpose other than optional receipt photos (see Section 2.3 above)</li>
-</ul>
-<h2>3. How We Use Your Information</h2>
-<table>
-<tr><th>Purpose</th><th>Data Used</th><th>Legal Basis</th></tr>
-<tr><td>Providing the app and syncing your data</td><td>Account info, expense data</td><td>Contract performance</td></tr>
-<tr><td>Improving performance and fixing bugs</td><td>Crash reports, usage data</td><td>Legitimate interest</td></tr>
-<tr><td>Showing ads to free users</td><td>Advertising ID (via AdMob)</td><td>Consent</td></tr>
-<tr><td>Authenticating your identity</td><td>Email, Google Sign-In token</td><td>Contract performance</td></tr>
-<tr><td>Sending optional reminders</td><td>Device push token</td><td>Consent</td></tr>
-<tr><td>Attaching receipt photos to expenses</td><td>Camera (optional, user-initiated only)</td><td>Consent</td></tr>
-</table>
-<p>We do not use your expense data for advertising, profiling, or any purpose other than providing the app to you.</p>
-<h2>4. Cross-Border Data Transfer and Storage</h2>
-<p>Your data is stored using <strong>Google Firebase</strong> (Firestore and related services), with data centres located primarily in the <strong>United States</strong>. By creating an account and using TrackMySpend, you explicitly and actively consent to your personal data being transferred to, stored in, and processed in the United States and other countries where Google operates infrastructure.</p>
-<p>These countries may have data protection laws that differ from those in your country of residence. Google Firebase maintains appropriate safeguards for such transfers including Standard Contractual Clauses (SCCs) approved by the European Commission.</p>
-<p>Firebase provides industry-standard encryption in transit (TLS 1.2+) and at rest (AES-256).</p>
-<h2>5. Data Security</h2>
-<p>We implement the following security measures to protect your data:</p>
-<ul>
-<li>Authentication is required to access your account</li>
-<li>Firestore security rules ensure each user can only access their own data</li>
-<li>Release builds are minified and obfuscated to deter reverse engineering</li>
-<li>We use Firebase App Check to prevent unauthorised access to our backend</li>
-</ul>
-<p>No method of transmission or storage is 100% secure. We cannot guarantee absolute security of your data. In the event of a data breach that affects your personal information, we will notify you and the relevant authorities as required by applicable law — within 72 hours for GDPR-regulated users and within the timeframes required by the Digital Personal Data Protection Act, 2023 (DPDPA) for Indian users.</p>
-<h2>6. Third-Party Services</h2>
-<p>TrackMySpend uses the following third-party services. Each operates under its own privacy policy, which we encourage you to review.</p>
-<table>
-<tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
-<tr><td>Google Firebase (Auth, Firestore, Analytics, Crashlytics)</td><td>Authentication, data sync, analytics, crash reporting</td><td>https://firebase.google.com/support/privacy</td></tr>
-<tr><td>Google AdMob</td><td>Displaying ads to free users only</td><td>https://policies.google.com/privacy</td></tr>
-<tr><td>Google Sign-In</td><td>Social login</td><td>https://policies.google.com/privacy</td></tr>
-<tr><td>Google Play Billing</td><td>Processing subscription payments</td><td>https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice</td></tr>
-</table>
-<h2>7. Advertising</h2>
-<p>Free users of TrackMySpend may see banner and interstitial advertisements served by <strong>Google AdMob</strong>. AdMob may use your Advertising ID to show personalised ads based on your interests.</p>
-<p><strong>Premium subscribers do not see any advertisements.</strong></p>
-<p>You can opt out of personalised ads at any time:</p>
-<ul>
-<li><strong>Android 12 and above:</strong> Go to Settings → Google → Ads → Delete advertising ID</li>
-<li><strong>Android 11 and below:</strong> Go to Settings → Google → Ads → Opt out of Ads Personalisation</li>
-</ul>
-<h2>8. Data Retention</h2>
-<ul>
-<li>Your account and expense data is retained as long as your account is active</li>
-<li>If you delete your account through the app (Settings → Delete Account), all your personal data is permanently and irreversibly deleted from our Firebase database within <strong>30 days</strong></li>
-<li>Anonymised, aggregated analytics data (which cannot be linked back to you) may be retained longer for product improvement purposes</li>
-<li>Crash logs are automatically purged by Firebase after 90 days</li>
-</ul>
-<h2>9. Your Rights</h2>
-<p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
-<p><strong>All users:</strong></p>
-<ul>
-<li><strong>Access</strong> — request a copy of the data we hold about you</li>
-<li><strong>Correction</strong> — request correction of inaccurate or incomplete data</li>
-<li><strong>Deletion</strong> — request deletion of your account and all associated personal data</li>
-<li><strong>Portability</strong> — export your expense data directly in CSV or Excel format from the Reports screen in the app at any time</li>
-</ul>
-<p><strong>Users in the European Economic Area (EEA) and United Kingdom:</strong></p>
-<p>You have additional rights under the GDPR and UK GDPR, including the right to restrict processing, object to processing, and lodge a complaint with your local data protection supervisory authority.</p>
-<p><strong>Users in India:</strong></p>
-<p>Under the Digital Personal Data Protection Act, 2023 (DPDPA), you have the right to access, correct, and erase your personal data, and to grievance redressal. Contact us at support@oceanustech.in for any grievances.</p>
-<p>To exercise any of these rights, contact us at <strong>support@oceanustech.in</strong>. We will respond within 30 days.</p>
-<h2>10. Children's Privacy</h2>
-<p>TrackMySpend is not intended for children under the age of 13 (or 16 in the EEA). We do not knowingly collect personal data from children under these ages. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at support@oceanustech.in and we will delete that information promptly.</p>
-<h2>11. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. When we make material changes, we will update the "Effective Date" at the top of this page and notify you via a prominent notice within the app at least 7 days before the change takes effect. For non-material changes, we will update the date and the revised policy will apply immediately.</p>
-<p>Continued use of the app after changes take effect constitutes your acceptance of the revised Privacy Policy.</p>
-<h2>12. Contact and Grievance Officer</h2>
-<p>For any questions, concerns, or data requests related to this Privacy Policy:</p>
-<p><strong>Oceanus Tech</strong></p>
-<p>Email: hello@oceanustech.in</p>
-<p>Address: Peshwai Road,Dhamote,Neral-410101 </p>
-<p>Response time: Within 30 days of receipt</p>
-<p class="updated">This Privacy Policy was last updated on April 22, 2026.</p>
+  <p><strong>Developer:</strong> Oceanus Tech</p>
+  <p><strong>Effective Date:</strong> May 2025</p>
+  <p><strong>Contact:</strong> trackmyspend@oceanustech.in</p>
+  <p><strong>Address:</strong> Peshwai Road, Dhamote, Neral — 410101, Maharashtra, India</p>
+ 
+  <h2>1. Introduction</h2>
+  <p>Oceanus Tech ("we", "us", or "our") built TrackMySpend as a freemium mobile application. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
+  <p>By creating an account or using TrackMySpend, you explicitly acknowledge that you have read, understood, and agreed to this Privacy Policy, including the transfer of your data to servers located outside your country of residence. If you do not agree, please do not use the app.</p>
+ 
+  <h2>2. Information We Collect</h2>
+ 
+  <h3>2.1 Information You Provide</h3>
+  <ul>
+    <li><strong>Account information</strong> — your name, email address, and profile photo (optional) when you register or sign in via Google</li>
+    <li><strong>Expense data</strong> — expense titles, amounts, categories, dates, notes, and payment methods you enter into the app</li>
+    <li><strong>Workspace names</strong> — labels you create to organise your expenses</li>
+    <li><strong>Budget settings</strong> — monthly budget limits and category budgets you configure</li>
+    <li><strong>Receipt photos</strong> — optional photos of receipts captured using your device camera. Camera access is only used when you choose to attach a receipt photo to an expense. Receipt photos are stored locally on your device. We do not use your camera for any other purpose.</li>
+    <li><strong>Voice input</strong> — spoken text captured when you use the Voice Add feature. See Section 2.6 for full details.</li>
+    <li><strong>Bank statement data</strong> — transaction data extracted from CSV files you choose to import. See Section 2.7 for full details.</li>
+    <li><strong>Referral data</strong> — your referral code and the number of successful referrals if you participate in the Refer &amp; Earn program.</li>
+  </ul>
+ 
+  <h3>2.2 Information Collected Automatically</h3>
+  <ul>
+    <li><strong>Device information</strong> — device model, operating system version, and unique device identifiers</li>
+    <li><strong>Usage data</strong> — app features used, screens visited, and session duration, collected via Firebase Analytics</li>
+    <li><strong>Crash reports</strong> — error logs and stack traces collected via Firebase Crashlytics to help us fix bugs</li>
+    <li><strong>Performance data</strong> — app startup time, screen load times, and network response times collected via Firebase Performance Monitoring</li>
+    <li><strong>Remote configuration</strong> — app settings such as feature flags and ad frequency adjusted via Firebase Remote Config. No personal data is collected through this service.</li>
+    <li><strong>Advertising ID</strong> — a resettable device identifier used by Google AdMob to show personalised ads to free users only</li>
+  </ul>
+ 
+  <h3>2.3 Camera Permission</h3>
+  <p>TrackMySpend requests access to your device camera solely to allow you to photograph receipts and attach them to expense entries. This is an entirely optional feature. <strong>We do not access your camera at any other time, do not record video, and do not transmit camera data to any server without your explicit action.</strong> You may deny camera permission and still use all other features of the app.</p>
+ 
+  <h3>2.4 Biometric Data</h3>
+  <p>TrackMySpend offers optional biometric login (fingerprint or Face ID). <strong>Oceanus Tech does not collect, receive, transmit, or store any biometric data whatsoever.</strong> Biometric authentication is handled entirely and exclusively by your device's operating system (Android BiometricManager API). Your fingerprint or facial data never leaves your device and never reaches our servers.</p>
+ 
+  <h3>2.5 Local Data Storage</h3>
+  <p>TrackMySpend stores expense data locally on your device using an encrypted Room database. This ensures your data is accessible even without an internet connection. Local data is synced to Firebase when connectivity is available.</p>
+  <ul>
+    <li>Local database is stored in your device's private app storage, inaccessible to other apps</li>
+    <li>You can create a local backup file from Settings → Local Backup</li>
+    <li>Deleting the app removes all locally stored data from your device</li>
+  </ul>
+ 
+  <h3>2.6 Microphone &amp; Voice Data <span class="new-badge">NEW</span></h3>
+  <p>The <strong>Voice Add</strong> feature uses your device microphone to capture spoken input when you tap the voice button.</p>
+  <ul>
+    <li>Audio is processed entirely by your device's built-in speech recognition (Google Speech Recognition)</li>
+    <li>We do <strong>not</strong> record, store, or transmit your audio to our servers</li>
+    <li>We only receive the converted text result (e.g. "500 food") to create your expense entry</li>
+    <li>Microphone permission is only requested when you use the Voice Add feature</li>
+    <li>You may deny microphone permission — Voice Add will not work, but all other features remain fully functional</li>
+  </ul>
+  <p><strong>Your voice audio never leaves your device. Only the converted text is used by the app.</strong></p>
+ 
+  <h3>2.7 Bank Statement Import <span class="new-badge">NEW</span></h3>
+  <p>The <strong>Import Bank Statement</strong> feature allows you to select a CSV file exported from your bank.</p>
+  <ul>
+    <li>The CSV file is read locally on your device only</li>
+    <li>We do <strong>not</strong> store your raw bank statement file on our servers</li>
+    <li>Only the extracted transaction data (date, amount, description) is saved to your TrackMySpend account</li>
+    <li>Bank account numbers, card numbers, and any sensitive banking credentials are never read or stored by the app</li>
+  </ul>
+ 
+  <h3>2.8 Home Screen Widget <span class="new-badge">NEW</span></h3>
+  <p>The Quick Add Widget (Premium feature) displays on your device's home screen.</p>
+  <ul>
+    <li>The widget reads only your premium subscription status from your device's local storage</li>
+    <li>No personal or financial data is displayed on the widget</li>
+    <li>No widget data is transmitted to our servers</li>
+  </ul>
+ 
+  <h3>2.9 Shared Workspaces</h3>
+  <p>If you use the Shared Workspace feature:</p>
+  <ul>
+    <li>Expenses you add in a shared workspace are visible to all members of that workspace</li>
+    <li>Your display name is shown alongside expenses you add</li>
+    <li>Workspace data is stored securely in Firebase Firestore</li>
+    <li>Only users with your invite code can join your shared workspace</li>
+  </ul>
+ 
+  <h3>2.10 Information We Do NOT Collect</h3>
+  <ul>
+    <li>We do not collect bank account numbers, credit card numbers, or any financial credentials</li>
+    <li>We do not access your contacts, SMS messages, or call logs</li>
+    <li>We do not collect your precise or approximate location</li>
+    <li>We do not collect biometric data (see Section 2.4)</li>
+    <li>We do not use the camera for any purpose other than optional receipt photos (see Section 2.3)</li>
+    <li>We do not record or store your voice audio (see Section 2.6)</li>
+    <li>We do not store your raw bank statement files (see Section 2.7)</li>
+  </ul>
+ 
+  <h2>3. How We Use Your Information</h2>
+  <table>
+    <tr><th>Purpose</th><th>Data Used</th><th>Legal Basis</th></tr>
+    <tr><td>Providing the app and syncing your data</td><td>Account info, expense data</td><td>Contract performance</td></tr>
+    <tr><td>Improving performance and fixing bugs</td><td>Crash reports, usage data, performance metrics</td><td>Legitimate interest</td></tr>
+    <tr><td>Showing ads to free users</td><td>Advertising ID (via AdMob)</td><td>Consent</td></tr>
+    <tr><td>Authenticating your identity</td><td>Email, Google Sign-In token</td><td>Contract performance</td></tr>
+    <tr><td>Sending optional reminders and budget alerts</td><td>Device push token</td><td>Consent</td></tr>
+    <tr><td>Attaching receipt photos to expenses</td><td>Camera (optional, user-initiated only)</td><td>Consent</td></tr>
+    <tr><td>Voice Add expense entry</td><td>Microphone (on-device only, not stored)</td><td>Consent</td></tr>
+    <tr><td>Bank statement import</td><td>CSV file (read locally, not stored)</td><td>Consent</td></tr>
+    <tr><td>Adjusting app configuration remotely</td><td>Firebase Remote Config (no personal data)</td><td>Legitimate interest</td></tr>
+    <tr><td>Referral reward tracking</td><td>Referral code, referral count</td><td>Contract performance</td></tr>
+  </table>
+  <p>We do not use your expense data for advertising, profiling, or any purpose other than providing the app to you.</p>
+ 
+  <h2>4. Device Permissions</h2>
+  <p>The following Android permissions are used by TrackMySpend and the reason for each:</p>
+  <table>
+    <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+    <tr><td>INTERNET</td><td>Cloud sync, authentication, ads</td><td>Yes</td></tr>
+    <tr><td>CAMERA</td><td>Optional receipt photo capture</td><td>No — optional</td></tr>
+    <tr><td>READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</td><td>Select receipt from gallery</td><td>No — optional</td></tr>
+    <tr><td>USE_BIOMETRIC / USE_FINGERPRINT</td><td>Optional biometric login</td><td>No — optional</td></tr>
+    <tr><td>POST_NOTIFICATIONS</td><td>Budget alerts and reminders</td><td>No — optional</td></tr>
+    <tr><td>RECEIVE_BOOT_COMPLETED</td><td>Reschedule reminders after device restart</td><td>No — only if reminders enabled</td></tr>
+    <tr><td>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</td><td>Deliver reminders at precise times</td><td>No — only if reminders enabled</td></tr>
+    <tr><td>VIBRATE</td><td>Vibrate on notification</td><td>No — optional</td></tr>
+    <tr><td>WRITE_EXTERNAL_STORAGE</td><td>Save local backup file (Android 9 and below)</td><td>No — optional</td></tr>
+  </table>
+  <p>Note: The app does not request RECORD_AUDIO permission. Voice Add uses Android's built-in RecognizerIntent which handles audio capture entirely within the system speech recognition service.</p>
+ 
+  <h2>5. Cross-Border Data Transfer and Storage</h2>
+  <p>Your data is stored using <strong>Google Firebase</strong> (Firestore and related services), with data centres located primarily in the <strong>United States</strong>. By creating an account and using TrackMySpend, you explicitly and actively consent to your personal data being transferred to, stored in, and processed in the United States and other countries where Google operates infrastructure.</p>
+  <p>These countries may have data protection laws that differ from those in your country of residence. Google Firebase maintains appropriate safeguards for such transfers including Standard Contractual Clauses (SCCs) approved by the European Commission.</p>
+  <p>Firebase provides industry-standard encryption in transit (TLS 1.2+) and at rest (AES-256).</p>
+ 
+  <h2>6. Data Security</h2>
+  <p>We implement the following security measures to protect your data:</p>
+  <ul>
+    <li>Authentication is required to access your account</li>
+    <li>M-PIN protection and optional biometric authentication on every login</li>
+    <li>Firestore security rules ensure each user can only access their own data</li>
+    <li>Release builds are minified and obfuscated to deter reverse engineering</li>
+    <li>We use Firebase App Check to prevent unauthorised access to our backend</li>
+    <li>All data in transit is encrypted using TLS/HTTPS</li>
+  </ul>
+  <p>No method of transmission or storage is 100% secure. In the event of a data breach that affects your personal information, we will notify you and the relevant authorities as required by applicable law — within 72 hours for GDPR-regulated users and within the timeframes required by the Digital Personal Data Protection Act, 2023 (DPDPA) for Indian users.</p>
+ 
+  <h2>7. Third-Party Services</h2>
+  <table>
+    <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+    <tr><td>Firebase Auth, Firestore, Analytics, Crashlytics</td><td>Authentication, data sync, analytics, crash reporting</td><td>firebase.google.com/support/privacy</td></tr>
+    <tr><td>Firebase Performance Monitoring</td><td>App performance metrics</td><td>firebase.google.com/support/privacy</td></tr>
+    <tr><td>Firebase Remote Config</td><td>Remote app configuration</td><td>firebase.google.com/support/privacy</td></tr>
+    <tr><td>Google AdMob</td><td>Displaying ads to free users only</td><td>policies.google.com/privacy</td></tr>
+    <tr><td>Google Sign-In</td><td>Social login</td><td>policies.google.com/privacy</td></tr>
+    <tr><td>Google Play Billing</td><td>Processing subscription payments</td><td>policies.google.com/privacy</td></tr>
+    <tr><td>Google Speech Recognition</td><td>On-device voice-to-text for Voice Add</td><td>policies.google.com/privacy</td></tr>
+    <tr><td>Google Play In-App Review</td><td>Prompts users to rate the app on Play Store</td><td>policies.google.com/privacy</td></tr>
+    <tr><td>Google Play App Update</td><td>In-app update notifications</td><td>policies.google.com/privacy</td></tr>
+  </table>
+ 
+  <h2>8. Advertising</h2>
+  <p>Free users of TrackMySpend may see advertisements served by <strong>Google AdMob</strong>. These include:</p>
+  <ul>
+    <li><strong>Interstitial ads</strong> — shown after every few expense additions</li>
+    <li><strong>Rewarded ads</strong> — shown before exporting reports, in exchange for the download</li>
+    <li><strong>Banner ads</strong> — shown on certain screens</li>
+  </ul>
+  <p>AdMob may use your Advertising ID to show personalised ads based on your interests.</p>
+  <p><strong>Premium subscribers do not see any advertisements.</strong></p>
+  <p>You can opt out of personalised ads at any time:</p>
+  <ul>
+    <li><strong>Android 12+:</strong> Settings → Google → Ads → Delete advertising ID</li>
+    <li><strong>Android 11 and below:</strong> Settings → Google → Ads → Opt out of Ads Personalisation</li>
+  </ul>
+ 
+  <h2>9. Data Retention</h2>
+  <ul>
+    <li>Your account and expense data is retained as long as your account is active</li>
+    <li>If you delete your account (Profile → Delete Account), all your personal data is permanently deleted from our Firebase database within <strong>30 days</strong></li>
+    <li>When your Premium subscription expires, your data in Premium workspaces is <strong>not deleted</strong> — it is retained and accessible again upon renewal</li>
+    <li>Anonymised, aggregated analytics data may be retained longer for product improvement purposes</li>
+    <li>Crash logs are automatically purged by Firebase after 90 days</li>
+  </ul>
+ 
+  <h2>10. Your Rights</h2>
+  <p><strong>All users:</strong></p>
+  <ul>
+    <li><strong>Access</strong> — request a copy of the data we hold about you</li>
+    <li><strong>Correction</strong> — request correction of inaccurate or incomplete data</li>
+    <li><strong>Deletion</strong> — request deletion of your account and all associated personal data</li>
+    <li><strong>Portability</strong> — export your expense data in CSV or Excel format from the Reports screen at any time</li>
+  </ul>
+  <p><strong>Users in the European Economic Area (EEA) and United Kingdom:</strong></p>
+  <p>You have additional rights under the GDPR and UK GDPR, including the right to restrict processing, object to processing, and lodge a complaint with your local data protection supervisory authority.</p>
+  <p><strong>Users in India:</strong></p>
+  <p>Under the Digital Personal Data Protection Act, 2023 (DPDPA), you have the right to access, correct, and erase your personal data, and to grievance redressal. Contact us at trackmyspend@oceanustech.in for any grievances.</p>
+  <p>To exercise any of these rights, contact us at <strong>trackmyspend@oceanustech.in</strong>. We will respond within 30 days.</p>
+ 
+  <h2>11. Children's Privacy</h2>
+  <p>TrackMySpend is not intended for children under the age of 13 (or 16 in the EEA). We do not knowingly collect personal data from children under these ages. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at trackmyspend@oceanustech.in and we will delete that information promptly.</p>
+ 
+  <h2>12. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the "Effective Date" at the top of this page and notify you via a prominent notice within the app at least 7 days before the change takes effect. For non-material changes, we will update the date and the revised policy will apply immediately.</p>
+  <p>Continued use of the app after changes take effect constitutes your acceptance of the revised Privacy Policy.</p>
+ 
+  <h2>13. Contact and Grievance Officer</h2>
+  <p>For any questions, concerns, or data requests related to this Privacy Policy:</p>
+  <p><strong>Oceanus Tech</strong></p>
+  <p>Email: trackmyspend@oceanustech.in</p>
+  <p>Address: Peshwai Road, Dhamote, Neral — 410101, Maharashtra, India</p>
+  <p>Response time: Within 30 days of receipt</p>
+ 
+  <p class="updated">This Privacy Policy was last updated on May 2025. Previous version effective April 22, 2026.</p>
 </div>
 </body>
 </html>
